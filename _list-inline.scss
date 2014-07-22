@@ -1,0 +1,22 @@
+// *************************************
+//
+//   #LIST-INLINE
+//
+// *************************************
+
+// The list-inline object simply displays a list of items in one line.
+
+// Predefine the variables below in order to alter and enable specific features.
+$tree-list-inline-namespace:    $tree-namespace !default;
+
+.#{$tree-list-inline-namespace}list-inline,
+%#{$tree-list-inline-namespace}list-inline {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        display: inline-block;
+    }
+
+}
