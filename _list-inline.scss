@@ -12,6 +12,10 @@ $tree-list-inline-namespace:            $tree-namespace !default;
 $tree-enable-list-inline--delimited:    false !default;
 $tree-list-inline-delimit-character:    ",\00A0" !default;
 
+
+
+
+
 .#{$tree-list-inline-namespace}list-inline,
 %#{$tree-list-inline-namespace}list-inline {
     margin:  0;
