@@ -1,6 +1,6 @@
 # List-inline
 
-The `list-inline` object simply displays a list as one horizontal row.
+The List-inline object simply displays a list as one horizontal row.
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ Once installed, `@import` into your project in its Objects layer:
 ### Install as a Git Submodule:
 
 ```sh
-git submodule add git@github.com:treeframework/object.list-inline.git
+$ git submodule add git@github.com:treeframework/object.list-inline.git
 ```
 
 Once installed, `@import` into your project in its Objects layer:
