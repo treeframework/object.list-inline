@@ -15,12 +15,18 @@ dependencies at the same time. If not using Bower, please be sure to install and
 ## Installation
 
 The recommended installation method is Bower, but you can install the
-List-inline module via a Git Submodule, or copy and paste.
+List-inline module via npm, Git Submodule, or copy and paste.
 
 ### Install using Bower:
 
 ```sh
-$ bower install --save tree-list-inline
+$ bower install tree-list-inline --save
+```
+
+### Install using npm:
+
+```sh
+$ npm install tree-list-inline --save
 ```
 
 Once installed, `@import` into your project in its Objects layer:

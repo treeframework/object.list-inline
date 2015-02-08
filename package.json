@@ -1,0 +1,23 @@
+{
+  "name": "tree-list-inline",
+  "description": "A simple object to remove bullets and indents from lists.",
+  "version": "0.1.7",
+  "author": "Ilia Kolev <info@iliakolev.com>",
+  "bugs": {
+    "url": "https://github.com/treeframework/object.list-inline/issues"
+  },
+  "dependencies": {
+    "tree-defaults": "~0.2.5"
+  },
+  "homepage": "https://github.com/treeframework/object.list-inline",
+  "keywords": [
+    "oocss",
+    "css"
+  ],
+  "license": "MIT",
+  "main": "_object.list-inline.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treeframework/object.list-inline.git"
+  }
+}
