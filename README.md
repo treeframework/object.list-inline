@@ -1,21 +1,20 @@
 # List-inline
 
-The List-inline object simply displays a list as one horizontal row.
+The `list-inline` object simply displays a list as one horizontal row.
 
 ## Dependencies
 
-The List-inline object depend on one other module:
+The `list-inline` object depend on one other module:
 
 * [settings.defaults](https://github.com/treeframework/settings.defaults)
 
-If you install the List-inline object using Bower, you will get these
-dependencies at the same time. If not using Bower, please be sure to install and
-`@import` these dependencies in the relevant way.
+If you install the `list-inline` object using Bower or npm, you will get these
+dependencies at the same time. If not using Bower or npm, please be sure to 
+install and `@import` these dependencies in the relevant way.
 
 ## Installation
 
-The recommended installation method is Bower, but you can install the
-List-inline module via npm, Git Submodule, or copy and paste.
+You can install the `list-inline` module via Bower, npm, or copy and paste.
 
 ### Install using Bower:
 
@@ -23,28 +22,16 @@ List-inline module via npm, Git Submodule, or copy and paste.
 $ bower install tree-list-inline --save
 ```
 
-### Install using npm:
-
-```sh
-$ npm install tree-list-inline --save
-```
-
-Once installed, `@import` into your project in its Objects layer:
+Once installed, `@import` into your project in its Object layer:
 
 ```scss
 @import "bower_components/tree-list-inline/object.list-inline";
 ```
 
-### Install as a Git Submodule:
+### Install using npm:
 
 ```sh
-$ git submodule add git@github.com:treeframework/object.list-inline.git
-```
-
-Once installed, `@import` into your project in its Objects layer:
-
-```scss
-@import "object.list-inline/object.list-inline";
+$ npm install tree-list-inline --save
 ```
 
 ### Install via file download
@@ -55,31 +42,31 @@ in its Objects layer.
 
 ## Usage
 
-Basic usage of the List-inline object uses thr required classes:
+Basic usage of the `list-inline` object uses the required classes:
 
 ```html
-<ul class="list-inline">
-    <li>Foo</li>
-    <li>Bar</li>
-    <li>Baz</li>
+<ul class="o-list-inline">
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
 </ul>
 ```
 
-The only valid children of the `.list-inline` node are `li`s.
+The only valid children of the `.o-list-inline` node are `li`s.
 
 ## Options
 
 Other, optional classes can supplement the required base classes:
 
-* `.list-inline--delimeter`: add character to delimit list items.
+* `.o-list-inline--delimeter`: add character to delimit list items.
 
 For example:
 
 ```html
-<ul class="list-inline  list-inline--delimited">
-    <li>Foo</li>
-    <li>Bar</li>
-    <li>Baz</li>
+<ul class="o-list-inline  o-list-inline--delimited">
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
 </ul>
 ```
 
@@ -87,10 +74,10 @@ If you wish to completely remove the whitespace between items, omit the closing
 `</li>` tag:
 
 ```html
-<ul class="list-inline">
-    <li>Foo
-    <li>Bar
-    <li>Baz
+<ul class="o-list-inline">
+    <li>...
+    <li>...
+    <li>...
 </ul>
 ```
 
