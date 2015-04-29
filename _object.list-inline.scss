@@ -1,23 +1,46 @@
-// *************************************
+// =============================================================================
 //
-//   #LIST-INLINE
+// Name:          List-inline
 //
-// *************************************
+// Description:   List of items in one line.
+//
+// Block:         `o-list-inline`
+//
+// Modifier:      `o-list-inline--delimited`
+//
+// Markup:
+//
+// <ul class="o-list-inline">
+//     <li>...</li>
+//     <li>...</li>
+//     <li>...</li>
+// </ul>
+//
+// =============================================================================
 
-// The list-inline object simply displays a list of items in one line.
+
+
+
+
+// Variables
+// =============================================================================
 
 // Predefine the variables below in order to alter and enable specific features.
+
 $tree-list-inline-namespace:            $tree-namespace !default;
 
-$tree-enable-list-inline--delimited:    false !default;
+$tree-enable-list-inline--delimited:       false !default;
 $tree-list-inline-delimit-character:    ",\00A0" !default;
 
 
 
 
 
-.#{$tree-list-inline-namespace}list-inline,
-%#{$tree-list-inline-namespace}list-inline {
+// =============================================================================
+// Block: `o-list-inline`
+// =============================================================================
+
+.#{$tree-list-inline-namespace}o-list-inline {
     margin:  0;
     padding: 0;
     list-style: none;
@@ -34,14 +57,16 @@ $tree-list-inline-delimit-character:    ",\00A0" !default;
 
 @if ($tree-enable-list-inline--delimited == true) {
 
+    // Modifier: `o-list-inline--delimited`
+    // =========================================================================
+
     // Comma delimited list to semantically mark up lists of tags, etc.
     //
     // N.B. This component requires that you remove the whitespace between LIs.
     //      The simplest (and valid) way to achieve this is by omitting the
     //      closing `</li>` tag.
 
-    .#{$tree-list-inline-namespace}list-inline--delimited,
-    %#{$tree-list-inline-namespace}list-inline--delimited {
+    .#{$tree-list-inline-namespace}o-list-inline--delimited {
 
         > li + li {
 
